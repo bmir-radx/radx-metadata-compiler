@@ -1,7 +1,6 @@
 package edu.stanford.radx.radxmetadatacompiler;
 
 import edu.stanford.radx.radxmetadatacompiler.cli.CliRunner;
-import edu.stanford.radx.radxmetadatacompiler.cli.CreateMetadata;
 import freemarker.template.Configuration;
 import freemarker.template.TemplateExceptionHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import java.io.File;
 import java.io.IOException;
 
 @SpringBootApplication

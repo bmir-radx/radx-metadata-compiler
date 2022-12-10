@@ -1,5 +1,6 @@
 package edu.stanford.radx.radxmetadatacompiler.cli;
 
+import edu.stanford.radx.radxmetadatacompiler.CreateMetadata;
 import freemarker.template.TemplateException;
 import org.springframework.stereotype.Component;
 import picocli.CommandLine;

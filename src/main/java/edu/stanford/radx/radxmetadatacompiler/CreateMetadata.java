@@ -1,4 +1,4 @@
-package edu.stanford.radx.radxmetadatacompiler.cli;
+package edu.stanford.radx.radxmetadatacompiler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import freemarker.template.Configuration;
