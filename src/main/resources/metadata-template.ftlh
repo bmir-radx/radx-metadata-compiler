@@ -221,7 +221,7 @@
                 "@id": "http://vocab.fairdatacollective.org/gdmt/Person"
                 },
                 "Creator Name": {
-                "@value": "${c.Value}?"
+                "@value": "${c.Value}"
                 },
                 <#assign res = "${c.Value}"?matches(r"(\w+) (\w+)")>
 
@@ -342,7 +342,7 @@
             "Contributor Name": {
                 "@value": "${c.Value}"
             },
-            <#assign res = "${c.Value}"?matches(r"(\w+) (\w+)")>
+            <#assign res = "${c.Value}"?matches(r"(\w+) (\w\.)? (\w+)")>
 
             "Contributor Given Name": {
             <#if res>
@@ -353,7 +353,7 @@
             },
             "Contributor Family Name": {
             <#if res>
-                "@value" : "${res?groups[2]}"
+                "@value" : "${res?groups[3]}"
             <#else>
                 "@value" : null
             </#if>
@@ -447,11 +447,11 @@
             },
             "Study Start Date": {
                 "@type": "xsd:dateTime",
-                "@value": null
+                "@value": "${startDate}"
             },
             "Study End Date": {
                 "@type": "xsd:dateTime",
-                "@value": null
+                "@value": "${endDate}"
             }
         }
     ],
