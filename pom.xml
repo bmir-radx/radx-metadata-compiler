@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>edu.stanford.radx</groupId>
 	<artifactId>radx-metadata-compiler</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.9.0</version>
 	<name>radx-metadata-compiler</name>
 	<description>A compiler for radx metadata</description>
 	<properties>
